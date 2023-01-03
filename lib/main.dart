@@ -40,7 +40,12 @@ class Homepage extends StatelessWidget {
 
               if(emailVerified){
                 print('You are verified');
-              } else{ print('You Need to verify');}
+              } else{ 
+                
+                print('You Need to verify');
+                
+              return const VerifyEmailView();
+                }
              
                           return Text('Done');
 
@@ -53,4 +58,26 @@ class Homepage extends StatelessWidget {
     );
   }
 
+}
+
+class VerifyEmailView extends StatefulWidget {
+  const VerifyEmailView({super.key});
+
+  @override
+  State<VerifyEmailView> createState() => _VerifyEmailViewState();
+}
+
+class _VerifyEmailViewState extends State<VerifyEmailView> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: [
+        const Text('Please verify your email address'),
+        TextButton(onPressed: () {
+          final user = FirebaseAuth.instance.currentUser;
+          user?.sendEmailVerification();
+
+        }, child: const Text('Send email verification'))
+        
+      ],);
+  }
 }
