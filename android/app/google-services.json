@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518397843858",
+    "project_id": "mynotes-flutter-magdoub",
+    "storage_bucket": "mynotes-flutter-magdoub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518397843858:android:fdf1eba700481b5edc094b",
+        "android_client_info": {
+          "package_name": "com.magdoub.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518397843858-mimgkesm72r61e1u2f5mh00cu7c7fdsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP1sB_ZjXj25Xqc2dujyKe7i6uZ0Ry0VA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518397843858-mimgkesm72r61e1u2f5mh00cu7c7fdsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
